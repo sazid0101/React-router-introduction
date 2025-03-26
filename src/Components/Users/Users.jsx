@@ -8,7 +8,7 @@ const Users = () => {
     }
 
     const users = useLoaderData()
-    console.log(users)
+    // console.log(users)
     return (
         <div >
             <h3>Users: {users.length}</h3>
