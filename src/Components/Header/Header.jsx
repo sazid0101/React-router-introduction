@@ -3,13 +3,13 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
-            <h3>Nav bar</h3>
+            
             <div className={'header'}>
                 <Link to={'/'}>Home</Link>
                 <Link to='/users'>Users</Link>
                 <Link to={'/posts'}>Posts</Link>
                 <Link to={'/about'}>About</Link>
-                <Link to={'/contact'}>Contact</Link>
+                <Link to={'/contact'}>Contact Us</Link>
             </div>
         </div>
     );
