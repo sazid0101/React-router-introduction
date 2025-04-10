@@ -15,6 +15,7 @@ import UserDetails from './Components/UserDetails/UserDetails.jsx';
 import Posts from './Components/Posts/Posts.jsx';
 import PostDetails from './Components/PostDetails/PostDetails.jsx';
 import Error from './Components/Error/Error.jsx';
+import Albums from './Components/Albums/Albums.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,11 @@ const router = createBrowserRouter([
         path: '/post/:id',
         loader: ({params})=>fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`),
         element:<PostDetails></PostDetails>
+      },
+      {
+        path: '/albums',
+        loader:()=> fetch('https://jsonplaceholder.typicode.com/albums'),
+        element:<Albums></Albums>
       }
     ]
   },
