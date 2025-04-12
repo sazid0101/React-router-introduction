@@ -7,8 +7,7 @@ const Album = ({album}) => {
    }
     return (
         <div style={postStyle}>
-            <h4>Album</h4>
-            <p>{id}</p>
+            <h4>Album: {id}</h4>
             <p>{title}</p>
         </div>
     );
